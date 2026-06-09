@@ -60,7 +60,7 @@
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/DASOS_vision_alpha_logo.png" alt="DASOS Vision Logo" style="max-width: 200px;">
+          <img src="assets/img/DASOS_vision_alpha_logo.png" alt="">
           <h1 class="sitename"></h1>
         </a>
 
@@ -87,7 +87,7 @@
                 </li> --> <!-- For future past projects -->
               </ul>
             </li>            
-            <li class="dropdown"><a href="Tools.html"><span>Tools</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"  class="active"><a href="Tools.html"><span>Tools</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>                
                     <li><a href="Tools.html#PlotToSat-brief">PlotToSat</a></li>
                     <li><a href="Tools.html#DASOS-brief">DASOS</a></li>
@@ -112,186 +112,182 @@
   <main class="main">
 
     <!-- Start of current page row -->
-    <div class="page-title"> 
+    
+<div class="page-title"> 
+  <nav class="breadcrumbs">
+    <div class="container">
+      <ol>
+        <li><a href="index.html">Home</a></li>
 
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Tools</li>
-          </ol>
-        </div>
-      </nav>
-    </div><!-- End of current page row -->
+        <li class="dropdownNews">
+          <a href="#">News</a>
+          <ul class="dropdownNews-menu">
+            <li><a href="News2026.html">2026</a></li>
+            <li><a href="News2025.html">2025</a></li>
+          </ul>
+        </li>
 
-
-
-
-
-
+        <li>2026</a></li>
+      </ol>
+    </div>
+  </nav>
+</div>
+<!-- End of current page row -->
 
     
 
 
+    <!-- Featured News Section -->
+    <section id="section_x" class="featured-services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>News & Updates</h2>
+        <p>Updates and milestones from our lab.</p>
+      </div><!-- End Section Title -->
 
 
-    
+      <div id="PSTWorkshop2026" class="container" data-aos="fade-up" data-aos-delay="100">
 
+        <div class="row g-0">
 
- <!-- Tools Section -->
-<section id="featured-services" class="featured-services section">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Tools</h2>
-    <p>Explore the open-source tools developed by our research group.</p>
-  </div><!-- End Section Title -->
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row g-4"> <!-- Row for columns with spacing -->
-
-      <!-- Service 1 -->
-      <div class="col-lg-6 col-md-6" data-aos="fade-left" data-aos-delay="300">
-        <div class="service-item d-flex align-items-start" data-aos="fade-up" data-aos-delay="400">
-          <!-- Image: 1/4 width -->
-          <div class="me-3" style="flex: 0 0 25%;">
-            <img src="assets/img/index/PlotToSat.jpg" alt="PlotToSat" class="img-fluid rounded">
-          </div>
-          <!-- Text: 3/4 width -->
-          <div class="service-info" style="flex: 1;">
-            <h4>PlotToSat</h4>
-            <p>Efficient extraction of Sentinel-1 and Sentinel-2 time series across multiple regions, processed on the Google Earth Engine cloud platform.</p>
-            <a href="Tools.html#PlotToSat-brief" class="service-link">Learn More</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Service 2 -->
-      <div class="col-lg-6 col-md-6" data-aos="fade-left" data-aos-delay="400">
-        <div class="service-item d-flex align-items-start" data-aos="fade-up" data-aos-delay="500">
-          <!-- Image: 1/4 width -->
-          <div class="me-3" style="flex: 0 0 25%;">
-            <img src="assets/img/papers/alignment.jpg" alt="DASOS" class="img-fluid rounded">
-          </div>
-          <!-- Text: 3/4 width -->
-          <div class="service-info" style="flex: 1;">
-            <h4>DASOS</h4>
-            <p>Extraction of structural features from 3D windows and 2D metrics, and creation of 3D polygonal meshes from rasterised LiDAR data to tackle uneven point density.</p>
-            <a href="Tools.html#DASOS-brief" class="service-link">Learn More</a>
-          </div>
-        </div>
-      </div>
-
-    </div> <!-- End row -->
-  </div> <!-- End container -->
-
-</section> <!-- /Tools Section -->
-
-    <!-- /PlotToSat Section -->
-    <section id="PlotToSat-brief" class="home-about section" style="background-color: #EDFDED;">  
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-            <div class="about-visual">
-              <div class="main-image">
-                  <img src="assets/img/papers/PlotToSatDiagram.jpg" alt="Modern medical facility" class="img-fluid" style="border: 3px solid #99cc8aa6; border-radius: 8px;">
-              </div>
-              
-            </div>
-          </div>
-
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
-            <div class="about-content">
-              <h2 class="section-heading">PlotToSat</h2>
-                <ul>
-                  <li>Open-source, scalable tool for generating Sentinel-1 and Sentinel-2 time-series signatures from distributed field plots and polygons</li>
-                  <li>Built using the Python API of Google Earth Engine, addressing major computational bottlenecks in EO data extraction</li>
-                  <li>Processed 18.3 TB of multi-tile Sentinel-1 and Sentinel-2 data for 15,962 forest plot regions across Spain in under 24 hours,</li>
-
-                  <li>Application on tree genera classification across Spain using NDVI time-series, revealing intra-genus heterogeneity - <a href="https://ieeexplore.ieee.org/abstract/document/10641135/">More info</a></li>
-                  <li>Used for land cover change detection at Samarra Archaeological City, indicating agricultural expansion - More info soon.</li>
-                  <li>Follow us on  <a href="https://bsky.app/profile/plottosat.bsky.social">Blue Sky</a>, Tutorial on <a href="https://www.youtube.com/watch?v=ItaZjmQlyhI&t=404s"> YouTube</a>, Code on <a href="https://github.com/Art-n-MathS/PlotToSat">GitHub</a></li>
-                </ul>
-              <div class="stats-grid">
-                <div class="stat-item">
-                  <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="41" data-purecounter-duration="1"></div>
-                  <div class="stat-label">Github Stars</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="426" data-purecounter-duration="1"></div>
-                  <div class="stat-label">Github clones</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"></div>
-                  <div class="stat-label">Associated papers</div>
-                </div>
+          <div class="col-lg-8" data-aos="fade-right" data-aos-delay="200">
+            <div class="featured-service-main">
+               <div class="service-details">
+                <h2><strong>Dr Milto Miltiadou participated in the well-established ForestSAT conference. </strong></h2>
               </div>
 
-              <div class="cta-section">
-                <a href="https://github.com/Art-n-MathS/PlotToSat" class="btn-primary">Learn More About PlotToSat</a>
+              <div class="service-image-wrapper">
+                <img src="assets/img/news/2026/ForestSAT2026.jpg" alt="Premier Healthcare Services" class="img-fluid" loading="lazy">
+                
+              </div>
+              <div class="service-details">
+                <p>ForestSAT is an international conference focusing on Spatial Analysis Technologies for forest related applications. Dr Milto Miltiadou participated as a workshop instructor, where she engaged participants with PlotToSat’s newest capabilities. She also gave an oral presentation on the latest developments and applications of PlotToSat. It was also an honour to participate as a mentor, where she has the chance to share her personal journey with early career researchers. The next ForestSAT conference will be held 5-9 June, 2028 - Madrid, Spain. </p>
+                <a href="https://www.forestsat.com/" class="main-cta">More info about ForestSAT 2028</a>
               </div>
             </div>
           </div>
-        </div>      
-      </div>
-    </section><!-- /PlotToSat Section -->
 
-    <!-- DASOS Section -->
-    <section id="DASOS-brief" class="home-about section">  
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
+          <div class="col-lg-4" data-aos="fade-left" data-aos-delay="200" >
+            <div class="services-sidebar">
 
          
-
-          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
-            <div class="about-content">
-              <h2 class="section-heading">DASOS</h2>
-                <ul>
-                  <li>Rasterised-based accumulation of LiDAR data into a 3D density volume for tackling uneven scanning patterns.</li>
-                  <li>Extraction of structural features from 3D windows and generation of 2D metrics for use in machine learning models.</li>
-                  <li>Construction of 3D polygonal meshes for realistic forest visualization.</li>
-                  <li>Used for estimating stand structure and diversity in Brazilian Atlantic Forests - <a href="https://www.mdpi.com/2072-4292/13/13/2444">More info</a>.</li>
-                  <li>Used for detecting dead standing Eucalypt trees in native Australian forests - <a href="https://www.sciencedirect.com/science/article/pii/S0303243418300485">More info</a>.</li>
-                </ul>
-              <div class="stats-grid">
-                <div class="stat-item">
-                  <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1"></div>
-                  <div class="stat-label">Github Stars</div>
+              <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon-wrapper">
+                  <i class="bi bi-graph-up"></i>
                 </div>
-                <div class="stat-item">
-                  <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"></div>
-                  <div class="stat-label">Associated papers</div>
+                <div class="service-info">
+                  <h4>04/05/2026</h4>
+                  <p>PlotToSat Workshop at ForestSAT conference.</p>
+                  <a href="#PSTWorkshop2026" class="service-link">Learn More</a>
                 </div>
-                <!-- <div class="stat-item">
-                  <div class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="186" data-purecounter-duration="1"></div>
-                  <div class="stat-label">TBC</div>
-                </div> -->
+              </div>
 
+              <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon-wrapper">
+                  <i class="bi bi-mortarboard"></i>
+                </div>
+                <div class="service-info">
+                  <h4>01/04/2026</h4>
+                  <p>Dr Benyamin Hosseiny joined DASOS' Vision Group!</p>
+                  <a href="#MSCA_Benyamin" class="service-link">Learn More</a>
+                </div>
               </div>
-            
-              <div class="cta-section">
-                <a href="https://miltomiltiadou.blogspot.com/2015/03/las13vis.html" class="btn-primary">Learn More About DASOS</a>
-              </div>
-            </div>
-          </div>
 
-           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-            <div class="about-visual">
-              <div class="main-image">
-                  <img src="assets/img/projects/EngD.jpg" alt="Modern medical facility" class="img-fluid" style="border: 3px solid #99cc8aa6; border-radius: 8px;">
+
+
+              <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon-wrapper">
+                  <i class="bi bi-globe"></i>
+                </div>
+                <div class="service-info">
+                  <h4>18/02/2026</h4>
+                  <p>Congratulations to James for his PhD award!.</p>
+                  <a href="#JamesPhD" class="service-link">Learn More</a>
+                </div>
               </div>
+
               
+              <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon-wrapper">
+                  <i class="bi bi-clock"></i>
+                </div>
+                <div class="service-info">
+                  <a href="News2026.html" class="service-link"> <h4>2026 News Archive</h4> </a>
+                  <a href="News2026.html" class="service-link"> <h4>2025 News Archive</h4> </a>
+                </div>
+              </div>
+
             </div>
           </div>
+
+          
+
         </div>
+
       </div>
-    </section><!-- /DASOS Section -->
+
+    </section><!-- /Featured News Section -->
+
+    <!-- PlotToSat Section -->
+    <section id="MSCA_Benyamin" class="featured-services section" style="background-color: #EDFDED;">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-8" data-aos="fade-right" data-aos-delay="200">
+            <div class="featured-service-main">
+              <div class="service-details">
+                <h2><strong>Dr Benyamin Hosseiny joined DASOS' Vision Group! </strong></h2>
+              </div>
+              <div class="service-image-wrapper">
+                <img src="assets/img/news/2026/ForestFireAI.jpg" alt="Premier Healthcare Services" class="img-fluid" loading="lazy">
+                
+              </div>
+              <div class="service-details">
+                <p>Dr Benyamin Hosseiny has started working on his MSCA postdoctoral Fellowship (ForestFireAI) on "Large-scale Prediction of Forest Fire Drivers from Space Using Multi-source Remote Sensing Data and Artificial Intelligence Techniques"! The project is in collaboration with Dr Henrik Persson (Swedish University of Agricultural Sciences - SLU) and Dr Tommaso Jucker (Selva lab, University of Bristol). Looking forward to the innovative results of the project!</p>
+                <a href="https://cordis.europa.eu/project/id/101206950" class="main-cta">More info about ForestFireAI</a>
+            </div>
+          </div>
+
+        </div>
+
+    </section><!-- /PlotToSat Section  End -->
+
+
+    <!-- James Section -->
+    <section id="JamesPhD" class="featured-services section" style="background-color: #ffffff;">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-8" data-aos="fade-right" data-aos-delay="200">
+            <div class="featured-service-main">
+              <div class="service-details">
+                <h2><strong>Mr James Chamberlain has been awarded a NERC GW4+ PhD studentship!</strong></h2>
+              </div>
+              <div class="service-image-wrapper">
+                <img src="assets/img/news/2026/JamesGw4.jpg" alt="Premier Healthcare Services" class="img-fluid" loading="lazy">
+                
+              </div>
+              <div class="service-details">
+                <p>James Chamberlain has been awarded a NERC GW4+ PhD studentship to work on "Mapping Geohazard Proximity and Risk Trends Around UNESCO Sites". The supervisory team consists of Dr Milto Miltiadou (University of Exeter), Dr Oktay Karakus (University of Cardiff), Dr Athos Agapiou (Cyprus University of Technology) and Dr Andrew Bell (Devon UNESCO Biosphere Reserve). James is expected to start his PhD journey in September 2026. Congratulations to James for getting funding through this high-competitive call. </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+    </section><!-- /ML4EO Section  End -->
+
+
     
 
 
     <!-- Service Details 2 Section (Part 2)-->
-    <section id="service-details-2" class="service-details-2 section">
+    <section id="service-details-2" class="service-details-2 section" style="background-color: white;">
       
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -435,6 +431,7 @@
             </div>
           </div>
 
+          
 
         </div>
       </div>

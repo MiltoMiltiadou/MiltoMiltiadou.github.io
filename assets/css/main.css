@@ -6232,3 +6232,43 @@ section,
   padding-bottom: 60px;
   /* Add your styles here */
 }
+
+
+.dropdownNews {
+  position: relative;
+}
+
+.dropdownNews-menu {
+  display: none;
+  position: absolute;
+  background: white;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  min-width: 120px;
+}
+
+.dropdownNews-menu li {
+  padding: 5px 10px;
+}
+
+.dropdownNews-menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdownNews-menu li:hover {
+  background: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.dropdownNews:hover .dropdownNews-menu {
+  display: block;
+}
+
+
+.dropdownNews-menu li::before {
+  content: "" !important;
+  display: none !important;
+}
